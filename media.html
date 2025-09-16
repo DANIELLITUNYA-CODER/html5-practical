@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GreenFarm — Media</title>
+  <meta name="description" content="Photos, audio, and video for GreenFarm.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://<username>.github.io/farmer-site/media.html">
+</head>
+<body>
+  <a href="#main">Skip to content</a>
+
+  <header>
+    <h1>Media</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html" aria-current="page">Media</a></li>
+        <li><a href="extras.html">Extras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <section>
+        <h2>Responsive image</h2>
+        <figure>
+          <picture>
+            <source srcset="assets/images/farm-large.jpg" media="(min-width:1000px)">
+            <source srcset="assets/images/farm-medium.jpg" media="(min-width:600px)">
+            <img src="assets/images/farm-small.jpg" alt="Wide view of a green farm with rows of crops and distant hills">
+          </picture>
+          <figcaption>GreenFarm fields. Photo shows crop rows and irrigation channels.</figcaption>
+        </figure>
+      </section>
+
+      <section>
+        <h2>Audio: farm sound</h2>
+        <p>Short cow sound clip for demo.</p>
+        <audio controls>
+          <source src="assets/audio/cow-moo.mp3" type="audio/mpeg">
+          Your browser does not support audio.
+        </audio>
+      </section>
+
+      <section>
+        <h2>Video: irrigation demo</h2>
+        <p>Watch a short clip of drip irrigation in action.</p>
+        <video controls width="640" poster="assets/images/hero-medium.jpg">
+          <source src="assets/video/irrigation.mp4" type="video/mp4">
+          <source src="assets/video/irrigation.webm" type="video/webm">
+          <track src="assets/captions/irrigation.vtt" kind="captions" srclang="en" label="English" default>
+          Sorry, your browser does not support embedded videos.
+        </video>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> GreenFarm</p>
+  </footer>
+</body>
+</html>
