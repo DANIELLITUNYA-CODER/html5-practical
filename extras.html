@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GreenFarm — Extras</title>
+  <meta name="description" content="Tables, details, dialog, progress, and meter examples.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://<username>.github.io/farmer-site/extras.html">
+</head>
+<body>
+  <a href="#main">Skip to content</a>
+
+  <header>
+    <h1>Extras</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="extras.html" aria-current="page">Extras</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <article>
+      <section>
+        <h2>Weekly work plan</h2>
+        <table>
+          <caption>Weekly Farm Work Plan</caption>
+          <thead>
+            <tr>
+              <th scope="col">Week</th>
+              <th scope="col">Task</th>
+              <th scope="col">Hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Soil testing & land prep</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Planting and mulching</td>
+              <td>10</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="2">Total</th>
+              <td>18</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section>
+        <h2>Interactive HTML (no JS)</h2>
+        <details>
+          <summary>What is organic farming?</summary>
+          <p>Organic farming avoids synthetic pesticides and grows crops using natural methods.</p>
+        </details>
+
+        <dialog open aria-label="Farmer quote">
+          <p>This is a demonstration dialog. Farmers plan, plant, and learn each season.</p>
+        </dialog>
+      </section>
+
+      <section>
+        <h2>Progress & meter</h2>
+        <p>Harvest readiness: <progress value="70" max="100">70%</progress></p>
+        <p>Soil moisture: <meter min="0" max="100" low="30" high="80" optimum="50" value="45">45%</meter></p>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2025">2025</time> GreenFarm</p>
+  </footer>
+</body>
+</html>
