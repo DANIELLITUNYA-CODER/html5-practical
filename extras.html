@@ -6,54 +6,59 @@
   <meta name="description" content="Tables, details, dialog, progress, and meter examples.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="canonical" href="https://<username>.github.io/farmer-site/extras.html">
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <a href="#main">Skip to content</a>
+  <a href="#main" class="skip-link">Skip to content</a>
 
   <header>
-    <h1>Extras</h1>
-    <nav aria-label="Primary">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="media.html">Media</a></li>
-        <li><a href="extras.html" aria-current="page">Extras</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1 class="site-title">Extras</h1>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="media.html">Media</a></li>
+          <li><a href="extras.html" aria-current="page">Extras</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main id="main">
-    <article>
+    <article class="container">
       <section>
         <h2>Weekly work plan</h2>
-        <table>
-          <caption>Weekly Farm Work Plan</caption>
-          <thead>
-            <tr>
-              <th scope="col">Week</th>
-              <th scope="col">Task</th>
-              <th scope="col">Hours</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Soil testing & land prep</td>
-              <td>8</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Planting and mulching</td>
-              <td>10</td>
-            </tr>
-          </tbody>
-          <tfoot>
-            <tr>
-              <th scope="row" colspan="2">Total</th>
-              <td>18</td>
-            </tr>
-          </tfoot>
-        </table>
+        <div class="table-wrap">
+          <table>
+            <caption>Weekly Farm Work Plan</caption>
+            <thead>
+              <tr>
+                <th scope="col">Week</th>
+                <th scope="col">Task</th>
+                <th scope="col">Hours</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Soil testing & land prep</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Planting and mulching</td>
+                <td>10</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th scope="row" colspan="2">Total</th>
+                <td>18</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
       </section>
 
       <section>
@@ -77,7 +82,9 @@
   </main>
 
   <footer>
-    <p>&copy; <time datetime="2025">2025</time> GreenFarm</p>
+    <div class="container">
+      <p>&copy; <time datetime="2025">2025</time> GreenFarm</p>
+    </div>
   </footer>
 </body>
 </html>
