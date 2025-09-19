@@ -6,23 +6,26 @@
 <meta name="description" content="A pure-HTML5 site about farming, irrigation, and agriculture, showing semantic elements, media, and accessibility." />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="canonical" href="https://example.com/" />
+<link rel="stylesheet" href="assets/css/styles.css" />
 </head>
-<body bgcolor="lightgreen">
-<a href="#main">Skip to content</a>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
 <header>
-  <h1>GreenFarm</h1>
-  <nav aria-label="Primary">
-    <ul>
-      <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="media.html">Media</a></li>
-      <li><a href="extras.html">Extras</a></li>
-    </ul>
-  </nav>
+  <div class="container">
+    <h1 class="site-title">GreenFarm</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="extras.html">Extras</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
-<main id="main">
-  <article>
+<main id="main" class="with-sidebar">
+  <article class="container">
     <header>
       <h2>Welcome</h2>
       <p><time datetime="2025-09-16">September 16, 2025</time></p>
@@ -46,27 +49,27 @@
       <p>Farm output status: <samp>Harvest successful.</samp></p>
       <p>We follow the <abbr title="Food and Agriculture Organization">FAO</abbr> standards for sustainable farming.</p>
       <blockquote cite="https://www.fao.org/">
-        “Agriculture is the most healthful, most useful, and most noble employment of man.”
+        "Agriculture is the most healthful, most useful, and most noble employment of man."
         <footer>— <cite>George Washington, quoted by FAO</cite></footer>
       </blockquote>
     </section>
-
-    <aside aria-label="Side notes">
-      <h4>Did you know?</h4>
-      <p><time datetime="1963-01-01">1963</time> marked the start of Kenya’s first major irrigation schemes.</p>
-    </aside>
-
-    <footer>
-      <address>
-        Contact: <a href="mailto:info@greenfarm.org">info@greenfarm.org</a><br>
-        GreenFarm Cooperative, Machakos County, Kenya
-      </address>
-    </footer>
   </article>
+
+  <aside aria-label="Side notes" class="container">
+    <h4>Did you know?</h4>
+    <p><time datetime="1963-01-01">1963</time> marked the start of Kenya's first major irrigation schemes.</p>
+    
+    <address>
+      Contact: <a href="mailto:info@greenfarm.org">info@greenfarm.org</a><br>
+      GreenFarm Cooperative, Machakos County, Kenya
+    </address>
+  </aside>
 </main>
 
 <footer>
-  <p>&copy; <time datetime="2025">2025</time> GreenFarm Cooperative. All rights reserved.</p>
+  <div class="container">
+    <p>&copy; <time datetime="2025">2025</time> GreenFarm Cooperative. All rights reserved.</p>
+  </div>
 </footer>
 </body>
 </html>
